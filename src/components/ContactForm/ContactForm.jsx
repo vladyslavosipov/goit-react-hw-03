@@ -3,7 +3,6 @@ import * as Yup from "yup";
 import { nanoid } from "nanoid";
 import css from "./ContactForm.module.css";
 
-// eslint-disable-next-line react/prop-types
 const ContactForm = ({ onAddContact }) => {
   const validationSchema = Yup.object().shape({
     name: Yup.string()
