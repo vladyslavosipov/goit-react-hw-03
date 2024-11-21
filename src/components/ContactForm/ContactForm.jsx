@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { nanoid } from "nanoid";
@@ -52,6 +53,11 @@ const ContactForm = ({ onAddContact }) => {
       )}
     </Formik>
   );
+};
+
+
+ContactForm.propTypes = {
+  onAddContact: PropTypes.func.isRequired,
 };
 
 export default ContactForm;
