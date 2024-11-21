@@ -1,5 +1,6 @@
 import css from "./SearchBox.module.css";
 
+// eslint-disable-next-line react/prop-types
 const SearchBox = ({ value, onChange }) => {
   return (
     <div className={css.searchBox}>

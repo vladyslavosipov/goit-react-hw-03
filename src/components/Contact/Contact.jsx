@@ -1,6 +1,7 @@
 import css from "./Contact.module.css";
 import { FaUser, FaPhone } from "react-icons/fa";
 
+// eslint-disable-next-line react/prop-types
 const Contact = ({ name, number, onDelete }) => {
   return (
     <li className={css.li}>
